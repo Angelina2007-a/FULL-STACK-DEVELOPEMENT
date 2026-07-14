@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Our Webpage</title>
+    <style>
+        body{
+            background: linear-gradient(to top, black ,black, darkred, black);
+        }
+        h1{
+            transition:all 1.5s ease-in-out ;
+            color: ghostwhite;
+            font-size: 150px;
+            margin: 30px;
+        }
+        body:hover h1{
+            margin-left: 450px;
+        }
+        h6{
+            color: ghostwhite;
+            text-align: center;
+            font-size: 50px;
+            margin: 30px;
+        }
+        img{
+            width: 70%;
+            height: 600px;
+            margin-left: 15%;
+            border: 3px ghostwhite solid;
+            border-radius: 0px 100px 0px 300px;
+        }
+        h2{
+            color: ghostwhite;font-size: 50px; text-align: center;
+        }
+        .Dairy{
+            transition:all 0.5s ease-in-out ;
+            background-color: ghostwhite;
+            width: 350px;
+            border-radius: 20px;
+             text-align: center;
+        }
+       .Dairy img{
+           
+            width: 350px;
+            height: 250px;
+            margin-left:0%;
+            border: 0px ghostwhite solid;
+            border-radius: 20px 20px 0px 150px;
+        }
+        .Dairy button{
+            font-weight: bold;
+            width: 300px;
+            height: 50px;
+            color: black;
+            font-size: larger;
+            border: 0px ghostwhite solid;
+            background-color: ghostwhite;
+        }
+        .Grocery{
+            transition:all 0.5s ease-in-out ;
+            background-color: ghostwhite;
+            width: 250px;
+            border-radius: 10px;
+             text-align: center;
+        }
+       .Grocery img{
+           
+            width: 250px;
+            height: 150px;
+            margin-left:0%;
+            border: 0px ghostwhite solid;
+            border-radius: 10px 10px 0px 50px;
+            space-between: evenly;
+        }
+        .Grocery button{
+            font-weight: bold;
+            width: 200px;
+            height: 40px;
+            color: black;
+            font-size: large;
+            border: 0px ghostwhite solid;
+            background-color: ghostwhite;
+        }
+        .Main{
+           
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .Main:hover .Dairy{
+            transform:scale(0.8);
+        }
+       .Main .Dairy:hover{
+            transform:scale(1.0);
+        }
+         .Main:hover .Grocery{
+            transform:scale(0.9);
+        }
+       .Main .Grocery:hover{
+            transform:scale(1.0);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>N e s t l e</h1>
+    <img src="https://www.indiaempire.com/images/20210701/Nestle.jpg" alt="Main image">
+    <h2>Dairy Products</h2>
+    <div class="Main">
+        <div class="Dairy">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRetcf7H8aoLel7HVjuBv_5cIl_EkrGu1ii0HCFiZElaaa_qigbIJQrgnw&s=10" alt="">
+        <button>Order Now</button>
+    </div>
+    
+    <div class="Dairy">
+        <img src="https://mir-s3-cdn-cf.behance.net/projects/404/dee34591728985.Y3JvcCw4MDA5LDYyNjQsMCw4MzI.jpg" alt="">
+        <button>Order Now</button>
+    </div>
+    <div class="Dairy">
+        <img src="https://www.shutterstock.com/shutterstock/videos/1109125435/thumb/1.jpg?ip=x480" alt="">
+        <button>Order Now</button>
+    </div>
+    <div class="Dairy">
+        <img src="https://cdn.grofers.com/da/cms-assets/cms/product/rc-upload-1777002425520-786.jpg" alt="">
+        <button>Order Now</button>
+    </div>
+    </div>
+
+    <h2>Grocerys</h2>
+    <div class="Main">
+        <div class="Grocery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO_zvWbBw1SNx1wRmC8ndjq5CW4qo0KMY2SJrL5k_vTQ&s=10" alt="">
+        <button>Order Now</button>
+    </div>
+    <div class="Grocery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWvjoRenSi6qPyV-kRpRvqUO6oOIG3CO_AtFVzOEJdpA&s" alt="">
+        <button>Order Now</button>
+    </div>
+    <div class="Grocery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnIZ3mOHem6tY6X1bissAooQRtvA6e1cDbvZmPYX5e8XbiIdFOcFA5neeP&s=10" alt="">
+        <button>Order Now</button>
+    </div>
+    <div class="Grocery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqIgKugKX8Z2KpYXUmycxEO20BHlyHU-FoVEtspfVAwA&s=10" alt="">
+        <button>Order Now</button>
+    </div>
+    <div class="Grocery">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE8q_8Mku5KJ7FJCf8g_q0U7olDM_xI71ySDQVIIaX2w&s=10" alt="">
+        <button>Order Now</button>
+    </div>
+    
+    </div>
+    <h2>Packaged Foods</h2>
+    <div class="Main">
+        <div class="Dairy">
+        <img src="https://m.media-amazon.com/images/I/81ZYxU1tBRL._AC_UF894,1000_QL80_.jpg" alt="">
+        <button>Order Now</button>
+    </div>
+    
+    <div class="Dairy">
+        <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/5bbbabff-39e8-451a-b756-300d680de541.__CR0,0,1000,619_PT0_SX970_V1___.jpg" alt="">
+        <button>Order Now</button>
+    </div>
+    <div class="Dairy">
+        <img src="https://betterfoodfactory.in/cdn/shop/files/Creamy_8_0b3fa40e-7c58-450c-b4d7-93f6cce9ea2c_grande.webp?v=1767030573" alt="">
+        <button>Order Now</button>
+    </div>
+    <div class="Dairy">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsVW1Et2rhGuhxLfxun56akE7K9lDwojf8hZwhXq9iIRIZZZTExKqQOGU&s=10" alt="">
+        <button>Order Now</button>
+    </div>
+    </div>
+    <h6>Good Food - Good Life</h6>
+</body>
+
+</html>
