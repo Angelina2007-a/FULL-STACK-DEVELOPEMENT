@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Marvel</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background:linear-gradient(to right,
+            rgb(15,3,3),rgb(52,2,2),rgb(1,0,0),rgb(1,28,14),rgb(18,1,44));
+        }
+        .MainGrid{
+            width:95%;
+            margin:auto;
+        }
+        .CoverGrid{
+            width:100%;
+            height:100%;
+            margin-top:20px;
+        }
+        .CoverGrid img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            border-radius:20px;
+            transition:0.7s;
+        }
+        .CoverGrid img:hover{
+            transform:scale(1.05);
+        }
+        .CoverGrid{
+            box-shadow:0 0 20px red,
+        }
+        .HeadGrid h1{
+            font-family: 'Bebas Neue', sans-serif;
+            font-size:70px;
+            letter-spacing:8px;
+            color:rgba(161, 156, 156, 0.788);
+            text-align:center;
+        }
+        .Grid{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:15px;
+        }
+        .Box{
+            height:250px;
+            border-radius:20px;
+            overflow:hidden;
+            transition:0.5s;
+        }
+        .Box img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+        .Box:hover{
+            transform:scale(1.05);
+        }
+        .b1{
+            box-shadow: 0px 0px 20px rgb(108, 4, 4);
+        }
+        .b2{
+            box-shadow:0px 0px 20px rgb(94, 2, 2);
+        }
+        .b3{
+            box-shadow:0px 0px 20px rgb(36, 77, 1);
+        }
+        .b4{
+            box-shadow:0px 0px 20px rgb(2, 27, 86);
+        }
+        .b5{
+            box-shadow:0px 0px 20px rgb(91, 34, 3);
+        }
+        .b6{
+            box-shadow:0px 0px 20px rgb(84, 13, 3);
+        }
+        .b7{
+            box-shadow:0px 0px 20px rgb(36, 77, 1);
+        }
+        .b8{
+            box-shadow:0px 0px 20px rgb(2, 27, 86);
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="MainGrid">
+
+    <!-- cover image -->
+
+    <div class="CoverGrid">
+        <img src="https://wallpaperaccess.com/full/2193203.jpg" alt=""img>
+    </div>
+
+    <!-- TITLE -->
+
+    <div class="HeadGrid">
+        <h1>AVENGERS ASSEMBLE</h1>
+    </div>
+
+    <!-- GRID -->
+
+    <div class="Grid">
+
+        <div class="Box b1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW_K-4WR04RAYPu46OxRtm4ss_-3Hon_9doUEdOGLbXw&s=10">
+        </div>
+
+        <div class="Box b2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKKdKBKpAFVPIdmwKakILugGGvQQ_Mg0DaatSW2BBoNA&s=10">
+        </div>
+
+        <div class="Box b3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCiupfx1JYA6J0I22MfKDRu4eJrXCX-a92UZWnD3-GWQ&s=10">
+        </div>
+
+        <div class="Box b4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR157GUE_Q2ghRCedZcmbIxpSZXvC7Ztq21Jad9sVXDOQ&s=10">
+        </div>
+
+        <div class="Box b5">
+            <img src="https://4kwallpapers.com/images/wallpapers/spider-man-marvel-1920x1080-11025.jpg">
+        </div>
+
+        <div class="Box b6">
+            <img src="https://wallpapercave.com/wp/wp5261265.jpg">
+        </div>
+
+        <div class="Box b7">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToZkE0aTMMLBQgju0Jza6eyXCJVXrUVnnkSsO1qW6qgg&s=10">
+        </div>
+
+        <div class="Box b8">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmfKt-XfwQB5sYQUO0QJvt1Gne8KaJ4qfhwLYFc84HiQ&s=10">
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
