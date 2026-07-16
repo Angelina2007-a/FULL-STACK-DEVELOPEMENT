@@ -22,8 +22,8 @@ A simple **Avengers-themed landing page** built using **HTML** and **CSS**. The 
 
 ```text
 Marvel-Grid/
-│── index.html
-└── README.md
+│── Grid.html
+└── About.md
 ```
 
 ## 📸 Preview
