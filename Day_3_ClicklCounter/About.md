@@ -1,16 +1,14 @@
-# 🌡️ Smart Thermostat
+# 🖱️ Click Counter App
 
-A simple **Smart Thermostat** web application built using **HTML, CSS, and JavaScript**. This project demonstrates JavaScript fundamentals by allowing users to increase, decrease, and reset the temperature while dynamically updating the UI based on the selected temperature.
+A simple and interactive **Click Counter** built using **HTML, CSS, and JavaScript**. This project was created to practice JavaScript fundamentals, including DOM manipulation, event handling, and dynamic UI updates.
 
 ## 🚀 Features
 
-- 🌡️ Increase and decrease temperature
-- 🔄 Reset temperature to the default value
-- 🎨 Dynamic temperature color changes
-- 🏠 Background changes based on temperature
-- 😊 Live temperature status updates
-- ✨ Glassmorphism-inspired UI
-- 📱 Responsive and clean design
+➕ Increase the counter
+➖ Decrease the counter
+🔄 Reset the counter
+🎨 Counter color changes based on its value
+📱 Simple and responsive user interface
 
 ## 🛠️ Technologies Used
 
@@ -21,44 +19,45 @@ A simple **Smart Thermostat** web application built using **HTML, CSS, and JavaS
 ## 📂 Project Structure
 
 ```text
-ThermoStat/
+Click-Counter/
 │
-├── images/
-│   ├── Cold.png
-│   ├── Comfortable.png
-│   ├── Freezing.png
-│   ├── Hot.png
-│   └── Warm.png
-│
-├── Ts.html
-├── Ts.css
-├── Ts.js
+├── index.html
+├── style.css
+├── script.js
 └── README.md
 ```
 
-## 🎯 JavaScript Concepts Practiced
+## 📚 Concepts Practiced
 
-- 📦 Variables
-- ⚡ Functions
-- 🎯 DOM Manipulation
-- 🖱️ Event Listeners
-- 🔄 Conditional Statements
-- 🎨 Dynamic Styling
+📦 Variables
+⚡ Functions
+🎯 DOM Selection
+🖱️ Event Listeners
+🔄 DOM Manipulation
+🧠 Conditional Statements
+🎨 Dynamic Styling
+
+## ▶️ How to Run
+
+1. Clone or download this repository.
+2. Open the project folder.
+3. Double-click `index.html` or open it in your browser.
 
 ## 📸 Preview
 
-> Add a screenshot or GIF of your project here.
+<img width="1896" height="930" alt="image" src="https://github.com/user-attachments/assets/327b1ff0-f34a-4aad-9889-d6a77fc0baf2" />
 
-## 💡 Future Improvements
 
-- 🌦️ Live weather API integration
-- 🌙 Dark/Light mode
-- 📊 Temperature history chart
-- 🎛️ Circular thermostat dial
-- 🎵 Sound effects for button interactions
+## 🌟 Future Improvements
+
+🔢 Add an animated counter
+💾 Save the counter using Local Storage
+🌙 Dark/Light mode
+📊 Track total clicks
+✨ Add sound effects and button animations
 
 ## 👩‍💻 Author
 
-**Angelina Raj**
+**Angelina**
 
-Building my way to React, one project at a time. 🚀
+Learning JavaScript one project at a time. 🚀
