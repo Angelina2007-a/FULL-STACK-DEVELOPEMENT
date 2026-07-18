@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Thermostat</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Ts.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <h1>Living Space</h1>
+
+        <p>
+            <span class="active-dot"></span>
+            Active • 4 Devices
+        </p>
+
+    </header>
+
+
+    <!-- Top Information -->
+    <section class="top-info">
+
+        <div class="info-box">
+            🌡 <span id="topTemp">21.5°C</span>
+        </div>
+
+        <div class="info-box">
+            💧 42%
+        </div>
+
+    </section>
+
+
+    <!-- Main Card -->
+    <main class="card">
+
+        <!-- Tabs -->
+        <div class="tabs">
+
+            <button class="tab active">
+                Climate
+            </button>
+
+            <button class="tab">
+                Lighting
+            </button>
+
+            <button class="tab">
+                Media
+            </button>
+
+        </div>
+
+
+        <!-- Temperature Section -->
+        <section class="temperature-section">
+
+            <button id="decrement" class="circle-btn">
+                −
+            </button>
+
+            <div class="temperature-content">
+
+                <h2 id="temperature">
+                    21°C
+                </h2>
+
+                <p id="heating">
+                    Heating to 23°C
+                </p>
+
+                <p id="status">
+                    😊 Comfortable
+                </p>
+
+            </div>
+
+            <button id="increment" class="circle-btn">
+                +
+            </button>
+
+        </section>
+
+
+        <!-- Reset -->
+        <div class="reset-area">
+
+            <button id="reset" class="reset-btn">
+                Reset
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- Bottom Statistics -->
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <h4>AVG TEMP</h4>
+
+            <h2 id="avgTemp">
+                21°C
+            </h2>
+
+            <p>Perfect</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <h4>HUMIDITY</h4>
+
+            <h2>
+                42%
+            </h2>
+
+            <p>Dry</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <h4>ENERGY</h4>
+
+            <h2>
+                8.2 kW
+            </h2>
+
+            <p>Low Usage</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <h4>NETWORK</h4>
+
+            <h2>
+                32 ms
+            </h2>
+
+            <p>Stable</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="Ts.js"></script>
+
+</body>
+</html>
