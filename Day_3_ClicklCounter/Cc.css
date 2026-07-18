@@ -1,0 +1,75 @@
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    height:100%;
+
+}
+body{
+    background:linear-gradient(90deg,#04344c 0%,#B0EDF9 100%);
+}
+.Heading{
+    text-align:center;
+    margin-top: 100px;
+    font-size:20px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    block-size: 500px;
+}
+.card-body{
+    background:rgba(235, 235, 247, 0.208);
+    padding:80px;
+    border-radius: 10px;
+    text-align: center;  
+    margin-top:60px;
+}
+.card-body h1{
+    margin-bottom:  70px;
+    font-size: 70px;
+}
+.card-btn{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+.card-btn button{
+    padding: 15px 25px;
+    border : 0;
+    font-size: 18px;
+    font-weight:bold;
+    cursor:  pointer;
+    transition:0.5s;
+    box-shadow: 3px 3px 15px rgba(1, 42, 71, 0.895);
+}
+   
+#decrement{
+    background:#04344ce6 ;
+    color:#b0edf9c9;
+}
+#decrement:hover{
+    background:#115e84d0;
+    color:#a1cee5f1;
+}
+#reset{
+    background:#04344ce6 ;
+    color:#b0edf9c9;
+}
+#reset:hover{
+    background:#07496ab3;
+    color:#a1cee5f1;
+}
+#increment{
+    background:#04344ce6 ;
+    color:#b0edf9c9;
+}
+#increment:hover{
+    background:#07496ab3;
+    color:#a1cee5f1;
+}
