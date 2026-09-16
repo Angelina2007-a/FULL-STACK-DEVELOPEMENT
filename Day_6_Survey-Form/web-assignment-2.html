@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="web-assignment-2.css">
+</head>
+
+<body>
+
+    <!-- YouTube Background Video -->
+    <div class="video-background">
+        <iframe
+            src="https://www.youtube.com/embed/CUHOfhWi--g?autoplay=1&mute=1&loop=1&playlist=CUHOfhWi--g&controls=0&rel=0&modestbranding=1"
+            allow="autoplay; fullscreen">
+        </iframe>
+    </div>
+
+    <!-- Dark overlay -->
+    <div class="video-overlay"></div>
+
+
+    <!-- Survey Form -->
+    <div class="container">
+
+        <h2>Survey Form</h2>
+
+        <form id="surveyForm">
+
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <!-- Age -->
+            <label for="age">Age:</label>
+            <input
+                type="number"
+                id="age"
+                name="age"
+                min="0"
+                placeholder="Enter your age"
+            >
+
+
+            <!-- Gender -->
+            <h4>Gender</h4>
+
+            <div class="options">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Male"
+                        required
+                    >
+                    Male
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Female"
+                    >
+                    Female
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="Other"
+                    >
+                    Other
+                </label>
+
+            </div>
+
+
+            <!-- Interests -->
+            <h4>Which areas are you interested in?</h4>
+
+            <div class="options">
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        value="Technology"
+                    >
+                    Technology
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        value="Education"
+                    >
+                    Education
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        value="Business"
+                    >
+                    Business
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="interest"
+                        value="Environment"
+                    >
+                    Environment
+                </label>
+
+            </div>
+
+
+            <!-- Satisfaction -->
+            <h4>How satisfied are you?</h4>
+
+            <div class="emoji-rating">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="satisfaction"
+                        value="Very Dissatisfied"
+                        required
+                    >
+                    <span>😡</span>
+                    <small>Very Bad</small>
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="satisfaction"
+                        value="Dissatisfied"
+                    >
+                    <span>😞</span>
+                    <small>Bad</small>
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="satisfaction"
+                        value="Neutral"
+                    >
+                    <span>😐</span>
+                    <small>Okay</small>
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="satisfaction"
+                        value="Satisfied"
+                    >
+                    <span>🙂</span>
+                    <small>Good</small>
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="satisfaction"
+                        value="Very Satisfied"
+                    >
+                    <span>😍</span>
+                    <small>Excellent</small>
+                </label>
+
+            </div>
+
+
+            <!-- Submit -->
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+
+    <script src="web-assignment-2.js"></script>
+
+</body>
+</html>
