@@ -1,0 +1,390 @@
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Page */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 30px 15px;
+}
+
+
+/* ============================= */
+/* YOUTUBE BACKGROUND */
+/* ============================= */
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+    z-index: -2;
+}
+
+
+/* YouTube iframe */
+.video-background iframe {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 100vw;
+    height: 56.25vw;
+
+    min-height: 100vh;
+    min-width: 177.78vh;
+
+    transform: translate(-50%, -50%);
+
+    border: none;
+    pointer-events: none;
+}
+
+
+/* Dark transparent layer */
+.video-overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    z-index: -1;
+}
+
+
+/* ============================= */
+/* FORM CONTAINER */
+/* ============================= */
+
+.container {
+    width: 100%;
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    background: rgba(230, 150, 225, 0.90);
+
+    padding: 28px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.30);
+
+    animation: formAppear 1s ease;
+}
+
+
+/* ============================= */
+/* HEADING */
+/* ============================= */
+
+h2 {
+    text-align: center;
+
+    color: #ffffff;
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+    animation: slideDown 1s ease;
+}
+
+
+/* Heading slide-down animation */
+@keyframes slideDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Form animation */
+@keyframes formAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ============================= */
+/* LABELS */
+/* ============================= */
+
+form > label {
+    display: block;
+
+    font-size: 16px;
+
+    color: #222;
+
+    margin-bottom: 6px;
+}
+
+
+/* ============================= */
+/* INPUTS */
+/* ============================= */
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+
+    padding: 11px;
+
+    margin-bottom: 16px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+/* Input focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+
+    transform: scale(1.01);
+
+    transition: 0.2s;
+}
+
+
+/* ============================= */
+/* SECTION HEADINGS */
+/* ============================= */
+
+h4 {
+    color: #222;
+
+    font-size: 17px;
+
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+
+/* ============================= */
+/* RADIO + CHECKBOX OPTIONS */
+/* ============================= */
+
+.options {
+    margin-bottom: 15px;
+}
+
+
+.options label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #222;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.options label:hover {
+    transform: translateX(5px);
+}
+
+
+/* Space between checkbox/radio and text */
+.options input {
+    margin-right: 8px;
+}
+
+
+/* ============================= */
+/* EMOJI RATING */
+/* ============================= */
+
+.emoji-rating {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin: 8px 0 22px;
+}
+
+
+/* Each emoji */
+.emoji-rating label {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+/* Hide radio button */
+.emoji-rating input {
+    display: none;
+}
+
+
+/* Emoji */
+.emoji-rating span {
+
+    font-size: 35px;
+
+    filter: grayscale(100%);
+
+    transition: 0.25s;
+}
+
+
+/* Text below emoji */
+.emoji-rating small {
+
+    margin-top: 5px;
+
+    font-size: 11px;
+
+    color: #333;
+}
+
+
+/* Hover */
+.emoji-rating label:hover span {
+
+    transform: scale(1.25);
+
+    filter: grayscale(0%);
+}
+
+
+/* Selected emoji */
+.emoji-rating input:checked + span {
+
+    transform: scale(1.35);
+
+    filter: grayscale(0%);
+
+}
+
+
+/* ============================= */
+/* SUBMIT BUTTON */
+/* ============================= */
+
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #85008f;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+
+    background: #65006d;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+button:active {
+
+    transform: translateY(0);
+
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 22px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    .emoji-rating span {
+        font-size: 28px;
+    }
+
+    .emoji-rating small {
+        font-size: 9px;
+    }
+
+}
